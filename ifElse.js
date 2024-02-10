@@ -101,25 +101,25 @@
 
 // Q5 - Write a program which accepts 3 number and prints the biggest one out of them.
 
-let digit1 = parseInt(prompt("Enter the first number"));
-let digit2 = parseInt(prompt("Enter the second number"));
-let digit3 = parseInt(prompt("Enter the third number"));
+// let digit1 = parseInt(prompt("Enter the first number"));
+// let digit2 = parseInt(prompt("Enter the second number"));
+// let digit3 = parseInt(prompt("Enter the third number"));
 
-if (isNaN(digit1) || isNaN(digit2) || isNaN(digit3)) {
-    console.log(`Please enter a valid digit`);
+// if (isNaN(digit1) || isNaN(digit2) || isNaN(digit3)) {
+//     console.log(`Please enter a valid digit`);
 
-} else if ((digit1 == digit2) && (digit1 == digit3)) {
-    console.log(`All digits are equal`);
+// } else if ((digit1 == digit2) && (digit1 == digit3)) {
+//     console.log(`All digits are equal`);
 
-} else if ((digit1 > digit2) && (digit1 > digit3)) {
-    console.log(`${digit1} is bigger than ${digit2} ${digit3}`);
+// } else if ((digit1 > digit2) && (digit1 > digit3)) {
+//     console.log(`${digit1} is bigger than ${digit2} ${digit3}`);
 
-} else if ((digit2 > digit1) && (digit2 > digit3)) {
-    console.log(`${digit2} is bigger than ${digit1} ${digit3}`);
+// } else if ((digit2 > digit1) && (digit2 > digit3)) {
+//     console.log(`${digit2} is bigger than ${digit1} ${digit3}`);
 
-} else {
-    console.log(`${digit3} is bigger than ${digit1} ${digit2}`);
-}
+// } else {
+//     console.log(`${digit3} is bigger than ${digit1} ${digit2}`);
+// }
 
 
 // Q6 Write a program that takes a password as input and prints whether it is weak, medium, or strong based on the following criteria:
@@ -128,25 +128,25 @@ if (isNaN(digit1) || isNaN(digit2) || isNaN(digit3)) {
 // Medium: 6-10 characters
 // Strong: More than 10 characters, containing at least one uppercase letter, one lowercase letter, one digit, and one special character.
 
-const uppercase = /[A-Z]/;
-const lowercase = /[a-z]/;
-const digit = /\d/;
-const specialChar = /\W/;
+// const uppercase = /[A-Z]/;
+// const lowercase = /[a-z]/;
+// const digit = /\d/;
+// const specialChar = /\W/;
 
-const password = prompt("Please enter you password for the strength test");
+// const password = prompt("Please enter you password for the strength test");
 
-if ( password.length < 6 ){
-    console.log(`Password has weak strength`);
+// if ( password.length < 6 ){
+//     console.log(`Password has weak strength`);
 
-}else if ( (password.length >= 6 && password.length<=10 ) ){
-    console.log(`Password has medium strength`);
+// }else if ( (password.length >= 6 && password.length<=10 ) ){
+//     console.log(`Password has medium strength`);
 
-}else if( uppercase.test(password) && lowercase.test(password) && digit.test(password) && specialChar.test(password) ){
-    console.log( `Password has strong strength`);
+// }else if( uppercase.test(password) && lowercase.test(password) && digit.test(password) && specialChar.test(password) ){
+//     console.log( `Password has strong strength`);
 
-}else{
-    console.log(`Please enter a uppercase, lowercase, digit and special character all together`)
-}
+// }else{
+//     console.log(`Please enter a uppercase, lowercase, digit and special character all together`)
+// }
 
 // ---------------------------------------------------------------------------------------------------
 
@@ -156,24 +156,24 @@ if ( password.length < 6 ){
 // If the total purchase amount is between $100 and $500 (inclusive), apply a 10% discount.
 // If the total purchase amount is greater than $500, apply a 20% discount.\
 
-let purchaseAmount = parseInt(prompt("Enter  your total purchase amount"));
-let discountedAmount = 0;
-let discountedPrice = 0;
+// let purchaseAmount = parseInt(prompt("Enter  your total purchase amount"));
+// let discountedAmount = 0;
+// let discountedPrice = 0;
 
-if (purchaseAmount < 1) {
-    console.log("Please enter the valid purchase amount");
+// if (purchaseAmount < 1) {
+//     console.log("Please enter the valid purchase amount");
 
-} else if (purchaseAmount < 100 && purchaseAmount > 1) {
-    console.log("No Discount Applied because the amount is less than 100RS");
+// } else if (purchaseAmount < 100 && purchaseAmount > 1) {
+//     console.log("No Discount Applied because the amount is less than 100RS");
 
-} else if (purchaseAmount >= 100 && purchaseAmount <= 500) {
-    discountedAmount = purchaseAmount * (10 / 100);
-    discountedPrice = purchaseAmount - discountedAmount;
-    console.log(`The discounted price after the Discount is ${discountedPrice} $`);
+// } else if (purchaseAmount >= 100 && purchaseAmount <= 500) {
+//     discountedAmount = purchaseAmount * (10 / 100);
+//     discountedPrice = purchaseAmount - discountedAmount;
+//     console.log(`The discounted price after the Discount is ${discountedPrice} $`);
 
-} else {
-    discountedAmount = purchaseAmount * (20 / 100);
-    discountedPrice = purchaseAmount - discountedAmount;
-    console.log(`The discounted price after the Discount is ${discountedPrice} $`);
+// } else {
+//     discountedAmount = purchaseAmount * (20 / 100);
+//     discountedPrice = purchaseAmount - discountedAmount;
+//     console.log(`The discounted price after the Discount is ${discountedPrice} $`);
 
-}
+// }
